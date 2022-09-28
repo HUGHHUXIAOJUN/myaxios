@@ -50,7 +50,7 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
         reject(createError('Network Error', config, null, request)) // 网络错误
       }
       request.ontimeout = function handleTimeout() {
-        reject(createError(`Timeout of ${timeout} ms  exceeded`, config, 'ECONNABORTED', request)) // 超时错误
+        reject(createError(`Timeout of ${timeout} ms exceeded`, config, 'ECONNABORTED', request)) // 超时错误
       }
       if (onDownloadProgress) {
         request.onprogress = onDownloadProgress

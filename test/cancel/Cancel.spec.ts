@@ -1,4 +1,4 @@
-import Cancel, { isCancel } from '../../src/cancel/Cancel'
+import Cancel, { isCancel } from '../../src/cancel/cancel'
 
 describe('cancel:Cancel', () => {
   test('should returns correct result when message is specified', () => {
